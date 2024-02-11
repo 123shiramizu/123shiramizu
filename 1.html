@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #4d007A;
+        }
+        .content{
+            /* display: flex; */
+        }
+        .v1{
+            width: 100%;
+           height: 100%;
+           margin-top: 40%;
+            text-align: center;
+        
+          
+          
+        }
+        .v1 video{
+            width: 100%;
+            height: 100%;
+        }
+       
+     
+        .v2 video{
+         
+            width: 30%;
+            height: 10%;
+            margin-right: 10%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="v1">
+            <video src="./video/生日快乐视频卡 - 涂鸦——使用Clipchamp制作.mp4" loop autoplay ></video>
+          </div> 
+          <div class="v2">
+              <video src="./video/无标题视频——使用Clipchamp制作.mp4" loop autoplay controls></video>
+          </div>
+
+    </div>
+  
+  
+</body>
+<script>
+alert('生日快乐')
+ var vs=document.querySelectorAll('video')
+ vs.forEach(item=>function(){
+     item.play()
+     console.log(item.play());
+ })
+console.log(document.querySelectorAll('video'));
+    
+
+</script>
+</html>

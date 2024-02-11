@@ -6,74 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #slider {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50px;
-  height: 50px;
-  background-color: #3498db;
-  border-radius: 50%;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
+        video{
+   height: 0px;
+   width: 0px;
+           
+        }
+        body{
+            background-color: #f58ee7;
+            color: #fff;
+            font-size: 32px;
+            font-weight: 500;
+            font-family: 微软雅黑;
+            text-align: center;
+        }
+        a{
+            text-decoration-line: none;
+        }
+        .s1{
+            margin: 200px auto;
+            font-family: 楷体;
+           
+            font-size: 38px;
+        }
+        .s2{
 
-#text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.slide-to-right {
-  transform: translateX(250px);
-}
-
-
+            margin-top: -100px;
+           
+        }
+       a {padding: 10px;
+            border: #fff 2px solid;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 2px;
+            color:  #4d007A;
+        }
+        a:hover{
+            background-color:  #f58ee7;
+            color:  #fff;
+        }
     </style>
 </head>
 <body>
-    <div id="unlock-container">
-        <div id="slider"></div>
-        <span id="text">滑动解锁</span>
-      </div>
-      <script>
-
-
-const slider = document.getElementById('slider');
-const unlockContainer = document.getElementById('unlock-container');
-
-let isDragging = false;
-let startPosition = 0;
-let currentX = 0;
-
-slider.addEventListener('mousedown', (event) => {
-  isDragging = true;
-  startPosition = event.clientX;
-});
-
-slider.addEventListener('mousemove', (event) => {
-  if (isDragging) {
-    currentX = event.clientX - startPosition;
-    slider.style.transform = `translateX(${currentX}px)`;
-  }
-});
-
-slider.addEventListener('mouseup', () => {
-  isDragging = false;
-  if (currentX > 250) {
-    slider.classList.add('slide-to-right');
-    unlockContainer.classList.add('unlocked');
-  } else {
-    slider.style.transform = '';
-  }
-});
-
-slider.addEventListener('mouseleave', () => {
-  isDragging = false;
-  slider.style.transform = '';
-});
-      </script>
+    <video src="./video/无标题视频——使用Clipchamp制作 (1).mp4" autoplay></video>
+    <div class="s1"><span>亲爱的李文丽同学，你收到一条生日祝福，请查收！:D</span></div>
+   
+    <div class="s2"> <a href="1.html">点我接收消息</a> </div>
 </body>
 </html>
