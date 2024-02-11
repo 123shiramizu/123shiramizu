@@ -47,9 +47,17 @@
     </style>
 </head>
 <body>
-    <video src="./无标题视频——使用Clipchamp制作 (1).mp4" autoplay></video>
+    <video src="./无标题视频——使用Clipchamp制作 (1).mp4" ></video>
     <div class="s1"><span>亲爱的李文丽同学，你收到一条生日祝福，请查收！:D</span></div>
    
     <div class="s2"> <a href="1.html">点我接收消息</a> </div>
+    <script>
+        var v=document.querySelector('video')
+        var a=document.querySelector('a').onclick=function(){
+            v.play()
+
+        }
+    </script>
 </body>
+
 </html>
